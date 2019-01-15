@@ -1,11 +1,20 @@
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
 <style>
 .exc:hover {
 background-color: red;
 color:white;
 }
+body{
+  background: #52a4b8;
+}
 </style>
-<div class="form">
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="form">
 <p style="font-size:150%;color:red;"> ลบไฟล์ในระบบฝากข้อมูล</p>
 <p style="font-size:140%;color:red;"> มีสติตอนลบนะ ไม่ได้ทำ Confirm ใว้นะ</p>
 
@@ -37,4 +46,9 @@ color:white;
     <input type="submit" value="กลับ"></input>
   </form> 
 </div>
+    </div>
+  </div>
+</div>
+
+
  

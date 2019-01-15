@@ -5,60 +5,35 @@
 <head>
 
 <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
  <style>
 .exc:hover {
 background-color: red;
-color:white;
+color:white;}
+body{
+  background: #52a4b8;
 }
  </style>
   <title>QUICK UPLOADER</title>
 </head>
 <body>
 
- <div style="
- 
- color:red;
- width:1000px;
- margin:auto;
- 
- ">
- 
-<script>
 
-function myFunction() {
-  /* Get the text field */
-  var copyText = document.getElementById("myInput");
-
-  /* Select the text field */
-  copyText.select();
-
-  /* Copy the text inside the text field */
-  document.execCommand("Copy");
-
-  /* Alert the copied text */
-  alert("คัดลอกลิ้ง " + copyText.value + " ไปยังคลิปบอร์ดเรียบร้อยแล้ว");
-} 
-
-</script>
-
-
- 
-
-
-<div class="form" style="
-position: relative;
-float:left;
-margin-left:auto;
-
-">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+	
+      <div class="form">
   <form enctype="multipart/form-data" action="quickupload.php" method="POST">
     <p>QUICK UPLOAD</p>
 	
-    <input type="file" name="uploaded_file"></input><br />
-    <input type="submit" value="Upload"></input>
+    <input   type="file" name="uploaded_file"></input><br />
+    <input  type="submit" value="Upload"></input>
   </form>
   <div style="color:#f2f2f2;font-size:150%;">
+  
 <?PHP
     
      
@@ -91,15 +66,9 @@ margin-left:auto;
 
 
   </div>
-  
-  
-  <div class="form" style="
-  float:right;
-  margin-right:auto;
-  text-align:left;
-  
-  
-  ">
+    </div>
+    <div class="col-lg-6">
+      <div class="form">
   <p style="font-size:200%;">ไฟล์ในระบบฝากข้อมูล</p>
   <p>-------------------------</p>
 	<?PHP
@@ -120,7 +89,40 @@ margin-left:auto;
 		
 	?>
 <p>-------------------------</p>
+    </div>
   </div>
+</div>
+
+
+
+ 
+<script>
+
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("Copy");
+
+  /* Alert the copied text */
+  alert("คัดลอกลิ้ง " + copyText.value + " ไปยังคลิปบอร์ดเรียบร้อยแล้ว");
+} 
+
+</script>
+
+
+ 
+
+
+
+  
+  
+  
+
   
   
 </body>

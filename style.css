@@ -19,7 +19,6 @@ input:hover {
   position: relative;
   z-index: 1;
   background: #FFFFFF;
-  max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
@@ -91,7 +90,4 @@ input:hover {
 }
 .container .info span .fa {
   color: #EF3B3A;
-}
-body {
-  background: #52a4b8; /* fallback for old browsers */    
 }
