@@ -48,7 +48,7 @@ body{
 	  
 	  $copycpcc = rawurldecode("http://".$_SERVER['REMOTE_ADDR'].$copycp);
 	  echo "<button onclick='myFunction()'>URL TO CLIPBOARD</button>";
-	  echo "<input  readonly  style='font-size:60%;height:0px;' type='text' value="."http://".$_SERVER['REMOTE_ADDR'].$copycp." id='myInput'>";
+	  echo "<input  readonly  style='font-size:60%;height:0px;' type='text' value="."http://".$_SERVER['HTTP_HOST'].$copycp." id='myInput'>";
 	  
     } else{
         echo '<p style="color:red;font-size:80%;">There was an error uploading the file, please try again!</p>';
